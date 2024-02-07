@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="text-center mt-4">CarWorld</h1>
+    <div class="row">
+      <div class="col d-flex">
+        <div class="container border shadow d-flex flex-column p-4">
+          <h2>Enter details</h2>
+          <p>Car brand</p>
+          <input id="carbrand" type="text" class="form-control mb-2" placeholder="carbrand">
+          <p>price</p>
+          <input id="price" type="text" class="form-control mb-2" placeholder="Price">
+          <p>key</p>
+          <input id="key" type="text" class="form-control mb-2" placeholder="key">
+          <button class="btn btn-primary mt-auto" onclick="addcar()">Store</button>
+    
+        </div>
+      </div>
+      <div class="col d-flex">
+        <div class="container border shadow d-flex flex-column p-4">
+          <h2>Enter key to retrive item</h2>
+          <p>Key</p>
+          <input id="searc" type="text" class="form-control mb-2" placeholder="key">
+          <button class="btn btn-primary mt-auto" onclick="search()">Retrive</button>
+          <div id="result"></div>
+    
+        </div>
+      </div>
+      <div class="col d-flex">
+        <div class="container border shadow d-flex flex-column p-4">
+          <h2>Enter key to delete item</h2>
+          <p>Key</p>
+          <input id="removeKey" type="text" class="form-control mb-2" placeholder="key">
+          <button class="btn btn-primary mt-auto" onclick="removeCar()">Remove</button>
+    
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col text-center">
+        <button class="btn btn-primary" onclick="removeall()">Clear all records</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./home.js"></script>
+</body>
+
+</html>
